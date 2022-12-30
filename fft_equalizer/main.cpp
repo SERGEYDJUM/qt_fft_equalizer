@@ -9,6 +9,7 @@ int main(int argc, char *argv[])
     w.show();
     return a.exec();
 }
+
 //Base=1000Hz ul=20000Hz ll=20Hz m=CB10 i=1 Oct.
 //16,15.84893,11.22018,22.38721
 //31.5,31.62278,22.38721,44.66836

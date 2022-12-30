@@ -14,10 +14,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt6 REQUIRED COMPONENTS Widgets Multimedia)
 
 qt_add_executable(fft_equalizer MANUAL_FINALIZATION main.cpp mainwindow.cpp mainwindow.h mainwindow.ui)
-qt_add_library(equalizer_component equalizer_component.h equalizer_component.cpp)
+#qt_add_library(equalizer_component equalizer_component.h equalizer_component.cpp)
 
-target_link_libraries(equalizer_component PUBLIC Qt6::Widgets Qt6::Multimedia)
-target_link_libraries(fft_equalizer PRIVATE equalizer_component)
+#target_link_libraries(equalizer_component PUBLIC Qt6::Widgets Qt6::Multimedia)
+#target_link_libraries(fft_equalizer PRIVATE equalizer_component)
+target_link_libraries(fft_equalizer PRIVATE Qt6::Widgets Qt6::Multimedia)
 
 install(TARGETS fft_equalizer BUNDLE DESTINATION . LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
 

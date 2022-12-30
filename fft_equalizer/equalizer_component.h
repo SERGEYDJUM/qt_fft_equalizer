@@ -4,11 +4,11 @@
 #include <QWidget>
 #include <QtMultimedia>
 
-class equalizer_component : public QWidget
+class Equalizer : public QWidget
 {
     Q_OBJECT
 public:
-    explicit equalizer_component(QWidget *parent = nullptr);
+    explicit Equalizer(QWidget *parent = nullptr);
 
 signals:
 
